@@ -49,3 +49,37 @@ html{
 .nav-bar a:hover,.nav-bar .active,.logo:hover{
     color: var(--main-color);
 }
+#menu{
+    font-size: 2.5rem;
+    display: none;
+}
+
+/* home section */
+
+section{
+   
+    min-height: 100vh;
+    padding: 15rem 9% 2rem;
+    
+}
+.my-img{
+    background-image: url(./harsh.png);
+    height: 40rem;
+    width: 40rem;
+    background-size:cover;
+    /* border: solid black 2rem; */
+    border-radius: 50%;
+    box-shadow: 1px 1px 12px #0ef
+}
+.home{
+    display: flex;
+    justify-content: space-evenly
+    
+}
+.home-content h3{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.home-content h1{
+    font-size: 5rem;
+}
