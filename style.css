@@ -18,6 +18,7 @@ body{
     --second-bg-color:#323946;
     --text-color:#fff;
     --main-color:#0ef ; 
+    
 }
 html{
     font-size: 62.5%;
@@ -79,15 +80,18 @@ section{
     justify-content: space-evenly
     
 }
-.home-content h3{
+h3{
     font-size: 3rem;
     font-weight: 600;
 } 
-.home-content h1{
+ h1{
     font-size: 5rem;
 }
-.home-content p{
-    margin-top: 5rem;
+h2{
+    font-size: 4rem;
+}
+p{
+    margin-top: 2rem;
     font-size: 1.8rem;
 }
 
@@ -110,10 +114,10 @@ section{
     box-shadow: 0 0 1rem var(--main-color);
     transition: .2s;
 }
-.home-content span{
+span{
     color: var(--main-color);
 }
-.home-content .btn{
+.btn{
   display: inline-block;
     background: var(--main-color);
    border-radius: 4rem;
@@ -124,3 +128,73 @@ section{
    letter-spacing: .2rem;
    transition: .5s ease ;
 }
+
+/* about section */
+.harsh{
+    height: 40rem;
+    border-radius: 50%;
+    box-shadow: 0 0 1.5rem var(--main-color);
+    
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    background-color: var(--second-bg-color);
+}
+.btn2{
+    margin-top: 2rem;
+}
+#about ,#services{
+    padding:10rem 15rem;
+}
+p{
+    text-align: justify;
+}
+
+/* services section */
+
+.services h2{
+  text-align: center;
+  font-size:4rem;
+}
+.services{
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+.container-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5rem ;
+    gap: 4rem;
+    
+   
+}
+.box{
+   flex: 1 1 30rem;
+    border: solid 0.2rem var(--bg-color) ;
+    padding: 2rem 2rem 2rem ;
+    width: 100rem;
+    background-color: var(--second-bg-color);
+    border-radius: 2rem;
+    text-align: center;
+}
+.box i{
+    font-size:5rem;
+    color: var(--main-color);
+}
+.box .btn{
+    margin-top: 1rem;
+}
+.box h3{
+    font-size: 2.5rem;
+}
+.p3{
+font-size: 1.5rem;
+}
+
+
+
