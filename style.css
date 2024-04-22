@@ -8,6 +8,7 @@
     outline: none;
     text-decoration: 0;
     font-family: 'Poppins' ,sans-serif;
+    scroll-behavior: smooth;
 }
 body{
     background-color: var(--bg-color);
@@ -17,9 +18,10 @@ body{
     --bg-color:#1f242d;
     --second-bg-color:#323946;
     --text-color:#fff;
-    --main-color:#0ef ; 
+    --main-color:hsl(184, 100%, 50%) ; 
     
 }
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -196,5 +198,78 @@ p{
 font-size: 1.5rem;
 }
 
+/* project section */
+
+.portfolio{
+    background-color: var(--second-bg-color);
+    padding-top: 10rem;
+}
+ 
+.portfolio .heading{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 2rem;
+    align-items: center;
+    
+}
+.port-box{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    height: 24rem;
+    border-radius: 2rem;     
+    box-shadow: 0 0 2rem var(--bg-color);
+}
+.port-box img{
+  width: 100%;
+  
+}
+.port-box:hover img{
+    transform: scale(1.2);
+    transition: .5s ease-in;
+}
+.port-box .layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgba(0,0,0,.5),var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translatey(100%);
+} 
+.port-box:hover .layer{
+    transition: 0.5s;
+    transform: translatey(0%);
+}
+.layer h4{
+    font-size: 3rem;
+}
+.layer p{
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+.layer a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text-color);
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+.layer a i{
+   color: var(--second-bg-color);
+   font-size: 1.5rem;
+}
 
 
