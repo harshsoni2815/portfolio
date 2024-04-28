@@ -17,8 +17,13 @@ window.onscroll = ()=>{
     }
   });
 };
-section.forEach(sec=>{
-  let top = window.scrollY
-  console.log("top:",top,"offset:",sec.offsetTop,"  offset hgt",sec.offsetHeight," id:", sec.getAttribute('id'));
+ 
+/* toggle effect in nav bar */
+let menu = document.querySelector('#menu-icon');
+let nav = document.querySelector(".nav-bar");
+menu.addEventListener("click",()=>{
+menu.classList.toggle("fa-x");
+nav.classList.toggle('active');
 });
+
 

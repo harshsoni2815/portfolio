@@ -44,7 +44,7 @@ html{
     cursor:default;
 }
 .nav-bar{
-    width: 45%;
+    /* width: 45%; */
     font-size: 1.7rem;
 }
 .nav-bar a {
@@ -55,7 +55,7 @@ html{
 .nav-bar a:hover,.nav-bar .active,.logo:hover{
     color: var(--main-color);
 }
-#menu{
+#menu-icon{
     font-size: 2.5rem;
     display: none;
 }
@@ -83,19 +83,20 @@ section{
     justify-content: space-evenly
     
 }
-h3{
+.home h3{
     font-size: 3rem;
     font-weight: 600;
 } 
- h1{
+ .home h1{
     font-size: 5rem;
 }
-h2{
+.home h2{
     font-size: 4rem;
 }
-p{
+.home p{
     margin-top: 2rem;
     font-size: 1.8rem;
+    text-align:left;
 }
 
 .social-acc a{
@@ -317,4 +318,49 @@ flex-wrap: wrap ;
 }
 .contact form .btn{
     margin-top: 1rem;
+}
+
+
+/*  responsivness */
+@media (max-width:1222px){
+    html{
+        font: 55%;
+    }
+}
+
+@media (max-width:991px){
+    .head{
+      padding : 1rem 2rem;
+     }
+    section{
+      padding:10rem 3% 2rem ;
+    }
+}
+
+@media (max-width:780px){
+    #menu-icon{
+        display: block;
+        font-size: 2rem;
+    }
+
+    .nav-bar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%; 
+        background-color: var(--bg-color);
+        padding: 1rem 3%;
+        box-shadow: 0  .5rem 1rem rgb(0, 0, 0,.2);
+        display: none;
+        transition: .5s;
+    }
+    .nav-bar a{
+        display: block;
+        padding: 1rem 2rem;
+        font-size: 2rem;
+    }
+    .nav-bar.active{
+        display:block;
+    }
+    
 }
